@@ -1,0 +1,548 @@
+@font-face {
+    font-family: 'LT Wave Black';
+    src: url('fonts/LTWave-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LT Wave Medium';
+    src: url('fonts/LTWave-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.phone-design {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #4B454D;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.page {
+    height: 100vh;
+}
+
+.full-height_2 {
+    display: block;
+}
+
+.full-height_6 {
+    display: block;
+    padding-top: 9.1250vw;
+}
+
+.full-height_8 {
+    display: block;
+}
+
+
+    .contact {
+        background: #651FBE;
+        border-radius: 0.5208vw;
+        padding: 0.4688vw 0.5729vw;
+        margin-bottom: 1.24vw;
+        margin-right: 3.3333vw;
+    }
+
+    .contact-phone {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: calc(0.69vw + 0.69vh);
+        display: block;
+    }
+
+    .logo-circle {
+        width: 4.3536vw;
+        height: 4.3536vw;
+        background-color: #651FBE;
+        border-radius: 50%;
+        margin-bottom: 0.85vw;
+    }
+
+    .nav-links {
+        font-family: 'LT Wave Black', sans-serif;
+        font-size: calc(0.934vw + 0.934vh);
+        display: flex;
+        flex-direction: row;
+        gap: 1.6667vw;
+        align-items: center;
+        padding: 0 1vw;
+    }
+
+    .menu-icon {
+         display: none;
+         font-size: 1.5em;
+         cursor: pointer;
+     }
+
+    .logo-text {
+        font-family: 'LT Wave Black', sans-serif;
+        font-size: calc(1.45vw + 1.45vh);
+    }
+
+    .logo-footer {
+        margin-top: 1vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-left: 3.3333vw;
+        margin-bottom: 1vw;
+    }
+
+    .logo {
+        margin-top: 0.5vw;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 3.3333vw;
+    }
+
+    .lt_wave_black {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: center;
+        font-size: calc(6.175vw + 6.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        line-height: calc(6vw + 6vh);
+        margin-right: 6.458335vw;
+        margin-left: 6.458335vw;
+        padding: 0;
+    }
+
+    .lt_wave_black .highlight {
+        color: #B072FF;
+    }
+
+    .highlight {
+        color: #B072FF;
+    }
+
+    .caret {
+        display: inline-block;
+        width: 1.7188vw;
+        height: 8.2917vw;
+        background-color: white;
+        animation: blink 1s step-start 0s infinite;
+        margin-bottom: -1vw;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .shadow-filter {
+        -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    }
+
+    .lt_wave_medium {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: center;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        line-height: 2.5vw;
+        margin: 2.604165vw 20.260415vw 25.6250vw;
+    }
+
+    .lt_wave_black_ex {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: left;
+        margin-left: 8.645835vw;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    .lt_wave_medium_left {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        line-height: 2.5vw;
+        margin-left: 8.854165vw;
+        margin-top: 0;
+        width: 37.7083vw;
+    }
+
+    .berfedo-svg {
+        width: 36.6865vw;
+        position: relative;
+        top: -4vw;
+    }
+
+    .flex-container-x {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+    }
+
+    .ai-svg {
+        width: 41.6667vw;
+        margin-left: 2.2917vw;
+    }
+
+    .lt_wave_black_ai {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: left;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .lt_wave_medium_ai {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        line-height: 2.5vw;
+        margin-right: 9.9vw;
+        margin-top: 0;
+    }
+
+    .flex-container-ai {
+        display: flex;
+        flex-direction: row;
+        gap: 2.6042vw;
+        align-items: center;
+        padding-top: 10.5vw;
+        padding-bottom: 12.5vw;
+    }
+
+    .menus-svg {
+        width: 60vw;
+        height: 100vh;
+    }
+
+    .sites-svg {
+        width: 57.81779vw;
+        height: 100vh;
+    }
+
+    page_4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lt_wave_black_design {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: center;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: 2vw;
+    }
+
+    .lt_wave_medium_design {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: center;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        margin-top: 0;
+        line-height: 2.5vw;
+    }
+
+    .devices-svg {
+        height: 44.8438vw;
+    }
+
+    .image-container {
+        position: relative;
+        width: 55.0833vw;
+        height: auto;
+        margin-top: 5.5417vw;
+        margin-bottom: 0;
+    }
+
+    .man-1-svg {
+        position: absolute;
+        bottom: 57.2%;
+        left: 83.5%;
+        transform: translateX(-50%);
+        height: 22.3438vw;
+        width: auto;
+        filter: drop-shadow(0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.9));
+    }
+
+    .flex-container-po {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 8.9583vw;
+        margin-left: -4.85vw;
+    }
+
+    .flex-part-po {
+        margin-left: -8vw;
+        margin-right: 3.3854vw;
+        margin-top: 4vw;
+    }
+
+    .lt_wave_black_po {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: left;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 7.45vw;
+    }
+
+    .lt_wave_medium-po {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        margin-top: 1vw;
+        margin-right: 9.9479vw;
+        line-height: 2.5vw;
+    }
+
+    .lt_wave_black_mz {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: left;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 7.45vw;
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+    }
+
+    .flex-part-mz-text {
+        margin-left: 8.6458vw;
+    }
+
+    .flex-part-mz-img {
+        position: relative;
+        width: 55.0833vw;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: -42vw
+    }
+
+    .notebook-svg {
+        width: 52.8125vw;
+        position: relative;
+        z-index: 0;
+        left: 0;
+    }
+
+    .man-2-svg {
+        height: 24.5219vw;
+        position: absolute;
+        top: 8vw;
+        left: 41.5vw;
+        z-index: 1;
+    }
+
+    .flex-container-mz {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 8.1250vw;
+        margin-right: 5vw;
+    }
+
+    .lt_wave_medium_mz {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        margin-top: 1vw;
+        margin-right: 9.9479vw;
+        line-height: 2.5vw;
+        width: 37.8646vw;
+    }
+
+    .ipad-svg {
+        height: 50.5208vw;
+    }
+
+    .flex-container-video-pr {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5.6979vw;
+    }
+
+    .video-pr-text {
+        margin-left: 0.5vw;
+    }
+
+    .lt_wave_black_pr {
+        font-family: 'LT Wave Black', sans-serif;
+        text-align: left;
+        font-size: calc(5.175vw + 5.175vh);
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 7.45vw;
+    }
+
+    .lt_wave_medium_pr {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        margin-top: 1vw;
+        line-height: 2.5vw;
+        margin-right: 10vw;
+    }
+
+    .spec-sl-svg {
+        width: 82.9167vw;
+    }
+
+    .img-spec-sl {
+        margin-left: 4vw;
+    }
+
+    .lt_wave_medium_spec {
+        font-family: 'LT Wave Medium', sans-serif;
+        text-align: left;
+        font-size: calc(1.201vw + 1.201vh);
+        color: #fff;
+        margin-top: -20vw;
+        margin-left: 8.6458vw;
+        width: 37.9167vw;
+    }
+
+    .man-3-svg {
+        height: 35.4167vw;
+    }
+
+    .man-3-svg-container {
+        margin-top: -27vw;
+        margin-left: 59.5vw;
+        margin-bottom: 6.7708vw;
+    }
+
+    .email-info {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: calc(0.55vw + 0.55vh);
+        margin-top: -0.4458vw;
+    }
+
+    .phone-info {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: calc(0.55vw + 0.55vh);
+        margin-top: 0.8333vw;
+    }
+
+    .info-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5.1563vw;
+        margin-right: 5.1563vw;
+        border-top: #fff 1px solid;
+        margin-top: 1.1458vw;
+        padding-top: 1.7188vw;
+        font-family: 'LT Wave Black', sans-serif;
+        font-size: calc(0.5vw + 0.5vh);
+        color: #fff;
+    }
+
+    .c_2024_C {
+        margin-top: 0;
+    }
+
+    .c_202 {
+        margin-top: -0.5vw;
+    }
+
+    .c_203 {
+        margin-top: -0.5vw;
+    }
+
+    .c_204 {
+        margin-top: -0.5vw;
+    }
+
+    .gradient_1 {
+        background: radial-gradient(ellipse, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+        display: block;
+    }
+
+    .gradient_2 {
+        background: radial-gradient(ellipse at 30% center, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+    }
+
+
+    .gradient_3 {
+        background: radial-gradient(ellipse at 50% 50%, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+        display: block;
+    }
+
+    .gradient_4 {
+        background: radial-gradient(ellipse, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+    }
+
+    .gradient_5 {
+        background: radial-gradient(ellipse at 70% center, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+        display: block;
+        padding-top: 7vw;
+    }
+
+    .gradient_6 {
+        background: radial-gradient(ellipse at 30% center, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+    }
+
+    .gradient_7 {
+        background: radial-gradient(ellipse at 70% center, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+        display: block;
+    }
+
+    .gradient_8 {
+        background: radial-gradient(ellipse at 30% center, rgba(104, 104, 104, 1) 0%, rgba(75, 69, 77, 0.8) 60%, rgba(75, 69, 77, 0) 100%);
+    }
+
+.element-to-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.element-to-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

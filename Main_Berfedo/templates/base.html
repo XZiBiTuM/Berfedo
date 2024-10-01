@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Berfedo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-aspect-ratio: 1.60001) and (max-aspect-ratio: 2.5) and (orientation: landscape)" href="/static/style-16-9.css">
+    <link rel="stylesheet" media="screen and (min-aspect-ratio: 1) and (max-aspect-ratio: 1.6) and (orientation: landscape)" href="/static/style-4-3.css">
+    <link rel="stylesheet" media="screen and (min-aspect-ratio: 2.50001) and (max-aspect-ratio: 3.2) and (orientation: landscape)" href="/static/style-21-9.css">
+    <link rel="stylesheet" media="screen and (min-aspect-ratio: 3.3) and (max-aspect-ratio: 3.7) and (orientation: landscape)" href="/static/style-32-9.css">
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="/static/phone1-1.css">
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: calc(6.175vw + 6.175vh);
+            color: white;
+            width: 100%;
+            height: 100%;
+            background: #4B454D;
+            font-family: 'LT Wave Black', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .loader.hidden {
+            display: none;
+        }
+        .dots {
+            display: inline-block;
+            width: 1em;
+            text-align: left;
+        }
+        @keyframes dots {
+            0%, 20% {
+                content: '.';
+            }
+            40% {
+                content: '..';
+            }
+            60% {
+                content: '...';
+            }
+            80%, 100% {
+                content: '';
+            }
+        }
+        .dots::after {
+            content: '';
+            animation: dots 1.5s steps(1, end) infinite;
+        }
+    </style>
+</head>
+<body>
+
+        <header>
+            <div class="logo">
+                <span class="logo-text">Berfedo</span>
+                <span class="logo-circle"></span>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+            <nav>
+                <ul class="nav-links">
+                    <li style="text-align: center;"><a style="text-align: center;" href="#ai">AI</a></li>
+                    <li style="text-align: center;"><a style="text-align: center;" href="#design">Design</a></li>
+                    <li style="text-align: center;"><a style="text-align: center;" href="#sl-po">Služby PO</a></li>
+                    <li style="text-align: center;"><a style="text-align: center;" href="#med_zast">Mediální zastupování</a></li>
+                    <li style="text-align: center;"><a style="text-align: center;" href="#video">Videomarketing</a></li>
+                    <li style="text-align: center;"><a style="text-align: center;" href="#spec_sl">Specializované</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <a class="contact-phone" href="tel:+420776880509">+420776880509</a>
+            </div>
+        </header>
+
+        <main>
+                {% block content %}
+                {% endblock %}
+        </main>
+
+        <footer>
+            <div class="logo-footer">
+                <span class="logo-text">Berfedo</span>
+                <span class="logo-circle"></span>
+            </div>
+            <div class="info-footer">
+                <a href="mailto:info@befedo.cz" class="email-info" style="text-decoration: none;">info@befedo.cz</a>
+                <a href="tel:+420776880509" class="phone-info" style="text-decoration: none;">+420776880509</a>
+            </div>
+            <div class="copyright">
+                <p class="c_2024_C">
+                    © 2024 Berfedo. All rights reserved.<br>
+                </p>
+                <div class="info-ve">
+                    <p class="c_202">Berfedo s.r.o.</p>
+                    <p class="c_203">IČO: 19860081</p>
+                    <p class="c_204">Sídlo: Svorností 574/5, 150 00 Praha 5</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-family: 'LT Wave Black', sans-serif; font-size: calc(0.5vw + 0.5vh); margin-bottom: 0.9vw;">powered by <a href="https://t.me/xzibitum" target="_blank">XZiBiTuM</a></p>
+        </footer>
+<script src="{% static 'js/nas_vas-swap-script.js' %}"></script>
+<script src="{% static 'js/css-selection-script.js' %}"></script>
+<script src="{% static 'js/scroll-animation.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+</body>
+</html>

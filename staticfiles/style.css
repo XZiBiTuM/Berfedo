@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'LT Wave Black';
+    src: url('static/fonts/LTWave-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LT Wave Medium';
+    src: url('static/fonts/LTWave-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lt_wave_black {
+    font-family: 'LT Wave Black', sans-serif;
+}
